@@ -3,8 +3,8 @@
 
 ; Functions definition
 
-(om::defmethod! csv-floats-in ((filename pathname))
-  :initvals '( 5)
+(om::defmethod! csv-floats-in ((filename pathname) &key (defaultformat 'double-float))
+  :initvals '(nil double-float)
   :indoc '("<n>")
   :icon 128
   :doc "reads csv file at \"filename\" and returns a list of lists of floats (that corresponds to the rows of the csv file)"
@@ -13,5 +13,5 @@
                        while line
                        collect (loop for start = 0 then (1+ finish)
                                  for finish = (position #\, line :start start)
-                                 collecting (parse-float (string-trim " " (subseq line start finish)))
+                                 collecting (parse-float (string-trim " " (subseq line start finish)) :default-format defaultformat)
                                  until (null finish)))))
