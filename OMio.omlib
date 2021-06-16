@@ -1,0 +1,21 @@
+(:om-lib
+
+(:version 0.11)
+(:doc )
+
+(:author )
+
+ ;;; SOURCE FILES TO LOAD
+
+(:source-files 
+        "sources/package" 
+        "sources/xmls-sharp"
+        "sources/omiocsv-sharp")
+
+(:symbols
+  (:packages 
+   (:package 
+    (:name "csv")
+    (:functions csv-floats-in)))))
+
+

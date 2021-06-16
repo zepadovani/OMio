@@ -1,0 +1,2 @@
+(defvar omio)
+(defpackage omio)
