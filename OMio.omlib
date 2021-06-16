@@ -1,0 +1,19 @@
+(:om-lib
+
+(:version 0.11)
+(:doc "Library to import/export different kind of data file types.")
+
+(:author "José Henrique Padovani (2019)")
+
+(:source-files 
+        "sources/package" 
+        "sources/xmls-sharp"
+        "sources/omiocsv-sharp")
+
+(:symbols
+  (:packages 
+   (:package 
+    (:name "csv")
+    (:functions csv-floats-in)))))
+
+
