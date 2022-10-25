@@ -1,8 +1,8 @@
-;; OMio - 0.11 - OM input/output: designed to make easier to import/export data
-;; 14/sept/2019
+;; OMio - 0.2 - OM input/output: designed to make easier to import/export data
+;; 24/oct/2022
 
 (defvar omio)
-(defpackage omio)
+(defpackage :omio)
 
 (in-package :omio)
 
@@ -39,12 +39,12 @@
 (om::fill-library *subpackages-list*)
 
 
-(om::set-lib-release 0.11)
+(om::set-lib-release 0.2)
 
    (print "
    ;;;-----------------
-   ;;; OMio 0.1 - in/out functions for OpenMusic
+   ;;; OMio 0.2 - in/out functions for OpenMusic
    ;;;
-   ;;; José Henrique Padovani (2019)
+   ;;; Jose Henrique Padovani (2022)
    ;;;===========================================================================
    ")

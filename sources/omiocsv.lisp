@@ -1,5 +1,5 @@
 ; Warning: First, seting the package where the functions will be defined
-(in-package :om)
+(in-package :omio)
 
 ; Functions definition
 
